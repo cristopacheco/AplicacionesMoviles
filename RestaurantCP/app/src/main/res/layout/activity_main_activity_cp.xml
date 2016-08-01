@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context="com.facci.restaurantcp.MainActivityCP"
+    android:orientation="vertical">
+
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:text="Restaurante CP"
+        android:id="@+id/tituloTV"
+        android:layout_gravity="center_horizontal" />
+
+    <GridLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:columnCount="3"
+        android:rowCount="4">
+
+        <ImageButton
+            android:layout_width="wrap_content"
+            android:layout_height="100dp"
+            android:id="@+id/imagen1CP"
+            android:layout_row="0"
+            android:layout_column="0"
+            android:layout_columnSpan="2"
+            android:src="@drawable/uno"
+            android:layout_marginTop="30dp"
+            android:onClick="click1"/>
+
+        <ImageButton
+            android:layout_width="200dp"
+            android:layout_height="50dp"
+            android:id="@+id/imagen2CP"
+            android:layout_row="1"
+            android:layout_column="0"
+            android:src="@drawable/dos"
+            android:scaleType="centerCrop"
+            android:layout_marginTop="30dp"
+            android:onClick="click2"/>
+
+        <ImageView
+            android:layout_width="200dp"
+            android:layout_height="50dp"
+            android:id="@+id/imagen3tv"
+            android:layout_row="1"
+            android:layout_column="1"
+            android:src="@drawable/tres"
+            android:scaleType="centerCrop"
+            android:layout_marginTop="30dp"
+            android:onClick="click3"/>
+
+        <ImageButton
+            android:layout_width="200dp"
+            android:layout_height="50dp"
+            android:id="@+id/imagen4CP"
+            android:layout_row="2"
+            android:layout_column="0"
+            android:src="@drawable/cuatro"
+            android:scaleType="centerCrop"
+            android:layout_marginTop="30dp"
+            android:onClick="click4"/>
+
+        <ImageView
+            android:layout_width="200dp"
+            android:layout_height="50dp"
+            android:id="@+id/imagen5tv"
+            android:layout_row="2"
+            android:layout_column="1"
+            android:src="@drawable/cinco"
+            android:scaleType="centerCrop"
+            android:layout_marginTop="30dp"
+            android:onClick="click5"/>
+
+        <ImageButton
+            android:layout_width="200dp"
+            android:layout_height="50dp"
+            android:id="@+id/imagen6CP"
+            android:layout_row="3"
+            android:layout_column="0"
+            android:src="@drawable/seis"
+            android:scaleType="centerCrop"
+            android:layout_marginTop="30dp"
+            android:onClick="click6"/>
+
+        <ImageView
+            android:layout_width="200dp"
+            android:layout_height="50dp"
+            android:id="@+id/imagen7tv"
+            android:layout_row="3"
+            android:layout_column="1"
+            android:src="@drawable/siete"
+            android:scaleType="centerCrop"
+            android:layout_marginTop="30dp"
+            android:onClick="click7"/>
+    </GridLayout>
+</LinearLayout>
